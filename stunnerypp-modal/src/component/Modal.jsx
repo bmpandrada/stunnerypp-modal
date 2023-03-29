@@ -3,14 +3,18 @@ import React, { useState } from 'react';
 const Modal = () => {
     const [isCancel, setCancel] = useState(true);
     const [isYes, setYes] = useState(false);
+    const [btnUpdate, setBtnUpdate] =useState(false)
 
     const handleClick = () => {
         setCancel(!isCancel);
         setYes(true);
         setTimeout(() => {
             setYes(false);
+            setBtnUpdate(true)
         }, 3000);
     };
+
+    
 
     return (
         <div className="container">
@@ -41,7 +45,7 @@ const Modal = () => {
                     <tr>
                         <td>$49.99 per month</td>
                         <td>December 13, 2020</td>
-                        <td><button onClick={() => { setCancel(!isCancel) }}>{`${isCancel ? 'Cancel' : 'Cancelled'}`}</button></td>
+                        <td><button onClick={() => { setCancel(!isCancel) }}>{`${!btnUpdate ? 'Cancel' : 'Cancelled'}`}</button></td>
                     </tr>
                 </tbody>
             </table>
