@@ -1,0 +1,50 @@
+html, body {
+	background: #000;
+	color: #fff;
+	font-family: "Arial", sans-serif;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+  position: relative;
+}
+
+table {
+	border: 0;
+  
+}
+
+th {
+	font-weight: bold;
+	background: #222;
+	padding: 5px 10px;
+  
+}
+
+td {
+	padding: 10px 20px;
+	border: 1px solid #222;
+}
+
+.button {
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: #ff0000;
+  
+}
+
+.ModalPopup{
+width: 400px;
+padding: 1.5rem;
+position: absolute;
+background-color: #053967;
+color: #dfd8d8;
+top: 50%;
+border-radius: 1rem;
+display: none;
+}
+.ModalPopup.show{
+  display: block;
+}
