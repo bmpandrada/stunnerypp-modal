@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 const Modal = () => {
-    const [isCancel, setCancel] = useState(true);
-    const [isYes, setYes] = useState(false);
-    const [btnUpdate, setBtnUpdate] =useState(false)
+    const [isCancel, setCancel] = useState(true); //for modal popup
+    const [isYes, setYes] = useState(false);//for confirmation
+    const [btnUpdate, setBtnUpdate] =useState(false)//for update button
 
     const handleClick = () => {
         setCancel(!isCancel);
